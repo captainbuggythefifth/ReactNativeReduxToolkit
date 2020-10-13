@@ -56,7 +56,7 @@ describe('ThemeProvider', () => {
     expect(wrapper.getAllByText(THEME.DEFAULT)).toHaveLength(1)
   });
 
-  it('should have true when setAuthenticated(!null)', async () => {
+  it('should have true when setTheme(!null)', async () => {
     act(async () => {
       fireEvent.press(wrapper.getByText("TOGGLE THEME"));
       await waitForNextUpdate();

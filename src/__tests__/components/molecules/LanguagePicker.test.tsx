@@ -20,7 +20,7 @@ describe('LanguagePicker render', () => {
     it('should render Picker component', () => {
         const itemToCheck = {
             ...items[0],
-            textColor: THEME.nativeColors[THEME.DEFAULT]
+            textColor: THEME.nativeTextColor[THEME.DEFAULT]
         };
 
         const foundItem = wrapper.getByTestId(pickerTestId).props.items.find((item: any) => item.label === itemToCheck.label);
@@ -31,7 +31,7 @@ describe('LanguagePicker render', () => {
         const itemsExpectedFromPicker = items.map((item: any) => {
             return {
                 ...item,
-                textColor: THEME.nativeColors[THEME.DEFAULT]
+                textColor: THEME.nativeTextColor[THEME.DEFAULT]
             }
         })
         wrapper = render(<LanguagePicker />);

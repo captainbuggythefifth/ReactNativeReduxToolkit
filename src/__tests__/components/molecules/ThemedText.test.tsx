@@ -38,8 +38,4 @@ describe('ThemedText render', () => {
             expect(result.current.theme).toEqual(DARK);
         });
     });
-
-
-
-
 });

@@ -19,7 +19,7 @@ describe('Picker render', () => {
         wrapper = render(<Picker onValueChange={onValueChange} items={items} />)
         const itemToCheck = {
             ...items[0],
-            textColor: THEME.nativeColors[THEME.DEFAULT] // TEXT.PRIMARY_NATIVE_COLOR_WHITE
+            textColor: THEME.nativeTextColor[THEME.DEFAULT] // TEXT.PRIMARY_NATIVE_COLOR_WHITE
         };
 
         const foundItem = wrapper.getByTestId(pickerTestId).props.items.find((item: any) => item.label === itemToCheck.label);
@@ -37,7 +37,7 @@ describe('Picker render', () => {
         const itemsExpectedFromPicker = items.map((item: any) => {
             return {
                 ...item,
-                textColor: THEME.nativeColors[THEME.DEFAULT]
+                textColor: THEME.nativeTextColor[THEME.DEFAULT]
             }
         })
         wrapper = render(<Picker onValueChange={onValueChange} items={items} />);

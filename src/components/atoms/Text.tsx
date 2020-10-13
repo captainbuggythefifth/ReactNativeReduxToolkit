@@ -6,7 +6,7 @@ export interface ITextProps {
     children: string | number,
     type?: typeof TEXT.PRIMARY | typeof TEXT.SECONDARY,
     customStyle?: TextStyle,
-    theme?: typeof THEME.LIGHT | typeof THEME.DARK
+    theme?: typeof THEME.LIGHT | typeof THEME.DARK | typeof THEME.TEAL
 }
 
 const Text = ({ children, type = TEXT.DEFAULT, customStyle = {}, theme = THEME.DEFAULT }: ITextProps) => {

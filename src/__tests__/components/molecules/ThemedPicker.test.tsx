@@ -30,8 +30,6 @@ describe('ThemedPicker render', () => {
         expect(wrapper.getAllByTestId(pickerTestId)).toHaveLength(1);
     });
     it('should render Picker with correct theme property', async () => {
-        console.log("Before: ", theme.result.current.theme);
-        
 
         fireEvent(wrapper.getByTestId(switchTestId), 'onValueChange', 'ab');
         // theme.result.current.setTheme(THEME.DARK);
@@ -42,12 +40,7 @@ describe('ThemedPicker render', () => {
             // await theme.waitForNextUpdate();
             
             
-        });        
-
-        console.log("after: ", theme.result.current.theme);
-
-       
-        
+        }); 
 
     });
 })
